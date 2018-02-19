@@ -1,0 +1,556 @@
+/*
+Theme Name: Guide In Serbia
+Author: 1gor0rlov
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentyseventeen
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+/* ---- HOVER CSS ---- */
+/* Grow Shadow */
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Shrink */
+.hvr-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+ .hvr-shrink:focus, .hvr-shrink:active {
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+/* Grow Rotate */
+.hvr-grow-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
+  -webkit-transform: scale(1.2) rotate(-8deg);
+  transform: scale(1.2) rotate(-8deg);
+}
+
+/* Float */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+/* ---- VIEW CSS ---- */
+.view {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #fff url(../images/bgimg.jpg) no-repeat center center
+}
+
+.view .mask,
+.view .content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0
+}
+
+.view img {
+  display: block;
+  position: relative
+}
+
+.view h2 {
+  text-transform: uppercase;
+  color: #D15520;
+  text-align: center;
+  position: relative;
+  font-size: 32px;
+  font-family: Raleway, serif;
+  padding: 10px;
+  letter-spacing: 4px;
+}
+
+.view p {
+  font-family: Merriweather, serif;
+  font-style: italic;
+  font-size: 20px !important;
+  position: relative;
+  color: #fff;
+  padding: 0px 20px 0px;
+  text-align: center
+}
+
+.view a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #000;
+  color: #fff;
+  font-family: Raleway, serif;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000
+}
+
+.view a.info:hover {
+  box-shadow: 0 0 5px #000
+}
+
+/*3*/
+
+.view-tenth img {
+  transform: scaleY(1);
+  transition: all .7s ease-in-out;
+}
+
+.view-tenth .mask {
+  background-color: rgb(222, 222, 222);
+  transition: all 0.5s linear;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.view-tenth h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  margin: 35% 40px 25px 40px;
+  transform: scale(0);
+  color: #D15520;
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+
+.view-tenth p {
+  color: #333;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s linear;
+  padding-
+}
+
+.view-tenth a.info {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s linear;
+}
+
+.view-tenth:hover img {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  opacity: 0;
+}
+
+.view-tenth:hover .mask {
+  opacity: 1;
+}
+
+.view-tenth:hover h2,
+.view-tenth:hover p,
+.view-tenth:hover a.info {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* ---- MY CSS ---- */
+
+body, p {
+  font-size: 18px !important;
+}
+
+p.lead {
+  font-size: 18px !important;
+}
+
+/* Fonts */
+h1,h2,h3,h4,h5,h6,p,a,body,blockquote {
+  font-family: 'Alegreya', serif !important;
+}
+
+.informations > h6, .informations >  h4, .informations >  p, .informations >  a {
+  font-family: 'Alegreya', serif !important;
+
+}
+
+.excursion_name > h2, .excursion_name > h4 {
+  font-family: 'Inconsolata', monospace !important;
+}
+
+/* Overlay */
+.overlay1::before {
+    opacity: 0.2 !important;
+}
+
+/* HR - horisontal line */
+hr {
+  border-top: 1px solid #1D5487 !important;
+  opacity: 0.4 !important;
+}
+
+/* Blockquote */
+blockquote {
+  color: #1D5487 !important;
+  border-left: 5px solid rgba(29, 83, 135, 0.8) !important;
+  background: rgba(29, 83, 135, 0.2) !important;
+  font-style: normal !important;
+  /* font-family: 'Inconsolata', monospace !important; */
+  font-weight: 500 !important;
+}
+
+/* Buttons */
+.btn.btn-filled {
+  border: 2px solid #5087BA;
+  background: #5087BA;
+}
+.btn-filled.btn:hover {
+  background: rgba(109, 154, 197, 1);
+  border: 2px solid rgba(109, 154, 197, 1);
+}
+input.wpcf7-submit {
+  border: 2px solid #5087BA !important;
+  background: #5087BA !important;
+}
+
+/* Navigation Bar */
+
+div.nav-bar {
+  background: #009688;
+  height: 85px;
+  max-height: 90px;
+  border-bottom: none;
+}
+
+div.module.left.nav_logo {
+  height: 100%;
+}
+
+div a.nav_logo {
+  height: 100%;
+}
+
+img.logo {
+  max-height: none;
+  vertical-align: middle;
+  width: auto;
+  height: 60px;
+  margin-top: calc( ( 85px - 60px ) / 2 );
+}
+
+div.menu li a {
+  opacity: 1;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+div.menu li a:hover {
+  box-shadow: 0 8px 10px -9px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  background: rgba(38,166,154,0.16)
+}
+
+.menu > li.menu-item {
+  margin-right: 0px;
+}
+
+div.module-group.right {
+  height: 100%;
+  text-align: center;
+}
+
+div.module.left.menu {
+  display: table;
+  height: 100%;
+}
+
+div.menu-left-navigation-menu-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+  /* Responsive Nav Bar */
+
+@media (max-width: 990px) {
+  div.module.widget-handle.mobile-toggle {
+    border-top: none;
+    border-left: none !important;
+    padding-right: 23px;
+  }
+
+  img.logo {
+    max-height: none;
+    vertical-align: middle;
+    width: auto;
+    height: 47px;
+    margin-top: calc( ( 74px - 47px ) / 2 );
+  }
+
+  div.nav-bar {
+    height: 74px;
+  }
+
+  div.widget-handle i.ti-menu.icon {
+    font-size: 28px;
+    margin-top: calc( ( 74px - 53px ) / 2 );
+  }
+}
+
+div.widget-handle i.ti-menu {
+  color: #fff;
+  opacity: 1;
+}
+
+/* Footer */
+footer.footer-2.bg-dark.text-center-xs {
+  background: #1D5487;
+}
+
+/* Map Opacity */
+.overlay::before {
+  opacity: 0.5 !important;
+}
+
+/* Removing Green Layer From Home Parallax Photo */
+.background-multiply .background-image-holder {
+  background-color: #fff !important;
+}
+
+/* Fuckin Map */
+.excursion_name_map {
+  margin-top: 40px;
+}
+
+.acf-map {
+   max-width:100% !important;
+   height: 100% !important;
+   margin: 0 0 !important;
+   /* padding-top: 0 !important; */
+}
+
+.background-image-holder {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+#mapsection{
+  padding: 0 0 ;
+}
+
+#mymap {
+  position: absolute;
+  z-index: 0;
+}
+
+#mytext {
+  z-index: 100;
+  position: relative;
+}
+
+/* Footer Widget Picture */
+.footerwidget {
+  height: 200vh !important;
+  top: -100vh !important;
+}
+
+/* Home Page */
+div.hover-tile {
+  background: #1d5487d1;;
+}
+
+.main_heading {
+  font-family: 'Pacifico', cursive !important;
+  color: #005D53 !important;
+  font-size: 52px !important;
+}
+
+.whoo {
+  color: #F16600 !important;
+  text-align: right;
+  font-size: 137px;
+  letter-spacing: 23px;
+  margin-bottom: 0;
+}
+
+.colored {
+  color: #1D5487;
+}
+
+a.col-md-4.hvr-shrink:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Archive */
+.row.postcard {
+  border: 1px solid rgba(29, 83, 135, 0.4);
+  border-radius: 8px;
+}
+
+.pt30 {
+  padding-top: 30px;
+}
+
+.mb30 {
+  margin-bottom: 30px !important;
+}
+
+/* Single Post */
+section.single-text {
+  margin-bottom: 0;
+}
+
+section.single-gallery {
+  padding-top: 0;
+}
+
+/* Sidebar */
+.informations > p {
+  font-size: 16px;
+}
+
+/* Modal (Popup Shit) */
+.foundry_modal > p {
+  margin-bottom: 20px;
+}
+
+.foundry_modal > p > a {
+  color: #5087BA;
+}
+
+/* Contact Form Labels */
+.contact_form {
+  width: 40%;
+  margin-left: 30%;
+}
+
+input.wpcf7-text, input.wpcf7-email, textarea.wpcf7-form-control {
+  border: 1px solid #5087BA !important;
+  width: 100%;
+}
+
+input.wpcf7-text, input.wpcf7-email, input.wpcf7-tel {
+  height: 30px !important;
+}
+
+input.wpcf7-email, input.wpcf7-tel {
+  background: #f5f5f5;
+}
+
+.wpcf7-form > p {
+  margin-bottom: 0px;
+}
+
+/* About Me */
+div.feature.feature-1.boxed {
+  width: 80%;
+  margin-left: 10%;
+}
+
+div.tab-content p {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.about_cover {
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+
+/* Contact */
+.contact_section {
+  padding-top: 180px;
+}
+
+.feature.bordered.mb30 > i, .feature.bordered.mb30 > svg {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  height: 64px;
+  width: 64px;
+}
+
+.feature.bordered.mb30 > h5 {
+  margin-bottom: 0px;
+}
+
+div.feature.bordered.mb30 {
+  height: 194px;
+}
+
+div.feature.bordered.mb30.hvr-grow-shadow {
+  width: 100%;
+}
+
+.contactform {
+  width: 70%;
+  /* margin-left: 15%; */
+}
+
+.contact_second_text {
+  margin-top: 135px;
+}
+
+.pb50 {
+  padding-bottom: 50px;
+}
+
+.spinner {
+  margin-right: 63% !important;
+  margin-top: 80px !important;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 2px 1px 0px #1D5487 !important;
+  animation-duration: 0.5s !important;
+}
